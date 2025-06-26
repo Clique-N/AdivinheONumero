@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número!</title>
+    <script src="jogo.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+    <h1>
+        Adivinhe o número
+    </h1>
+
+    <br>
+
+    <p>
+        O jogo funciona da seguinte maneira: 
+    </p>
+    <p>
+        Toda vez que você abrir ou recarregar a página, um número aleatório será gerado. O objetivo é você adivinhar qual é o número em 10 tentativas por meio de chutes e dicas.
+    </p>
+
+    <br>
+
+    <div id="inputInfo">
+        <label for="numeroChutado">Digite um número de 1 a 100:</label>
+        <br>
+        <input type="text" id="numeroChutado"> 
+
+        <p id="resultado"></p>
+        <p id="mensagem"></p>
+
+        <button id="chuta" onclick="jogo()" >Chutar</button>
+    </div>
+</body>
+</html>
